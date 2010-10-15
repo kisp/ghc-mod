@@ -44,7 +44,7 @@ check fileName = withGHC $ do
 
 -- I don't know why, but parseDynamicFlags must be used.
 cmdOptions :: [Located String]
-cmdOptions = map noLoc ["-Wall","-fno-warn-unused-do-bind"]
+cmdOptions = map noLoc ["-Wall","-fno-warn-unused-do-bind", "-fno-warn-missing-signatures"]
 
 ----------------------------------------------------------------
 
